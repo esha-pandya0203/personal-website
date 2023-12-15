@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function Menu() {
+export default function Menu() {
   return (
     <Navbar expand="lg" className="navbar">
       <Container>
@@ -24,5 +24,3 @@ function Menu() {
     </Navbar>
   );
 }
-
-export default Menu;
