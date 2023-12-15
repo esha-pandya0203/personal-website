@@ -1,7 +1,18 @@
-.body {
-  font-family: 'Didact Gothic';
+.app-container {
+  background-color: #E8D9C9;
+  font-family: 'Didact Gothic'; 
+  color: #495A4C; 
 }
 
+.rounded-container {
+  background-color: #FFEFDD;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* menu bar */ 
 .navbar {
   background-color: #9AAC9D;
   padding-right: 0; 
@@ -9,7 +20,6 @@
 }
 
 .navbar-brand {
-  color: #495A4C;
   font-family: 'Kaushan Script', serif;
   font-weight: bold;
 }
@@ -18,6 +28,29 @@
   margin-left: auto;
 }
 
-.menu-link {
-  color: #495A4C; 
+/* home page */
+.home {
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+
+.arrow-icon {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 30px;
+  color: #495A4C;
+}
+
+/* contact icons */ 
+.contact-icons {
+  margin-top: 20px;
+}
+
+.icon {
+  color: #495A4C;
+  padding: 10px;
+  font-size: 20px;
 }
