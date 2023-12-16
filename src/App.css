@@ -30,8 +30,10 @@
 
 /* home page */
 .home {
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 .arrow-icon {
@@ -40,8 +42,9 @@
   display: flex;
   left: 0;
   right: 0;
-  top: 30px;
+  top: 110px;
   color: #495A4C;
+  font-size: 25px;
 }
 
 /* contact icons */ 
@@ -52,5 +55,20 @@
 .icon {
   color: #495A4C;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+/* about section */ 
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 100%;
+}
+
+.about-text {
+  text-align: left;
+  margin-left: 30px;
 }
