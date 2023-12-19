@@ -111,3 +111,50 @@
 .skill-percentage .progress-bar {
   background-color: #9AAC9D;
 }
+
+/* projects section */ 
+.projects-container {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  display: flex;
+  background-color: #9AAC9D;
+  border-radius: 15px;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+.project-card-image {
+  width: 50%;
+  padding: 1%;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-content {
+  margin-left: 2%;
+  text-align: left;
+  padding: 1%;
+  width: 75%;
+  position: relative;
+}
+
+.project-name {
+  font-weight: bold;
+}
+
+.project-date {
+  text-align: right;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+}

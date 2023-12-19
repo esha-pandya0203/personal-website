@@ -1,14 +1,15 @@
-export default function ProjectInfo({ project }) {
+export default function ProjectInfo({ projects }) {
     return (
         <div className='project-info-container'>
-            {project.map(({ name, image, description }) => (
+            {projects.map(({ name, image, description, date }) => (
                 <div className='project'>
-                    <div className='project-image'>
+                    <div className='project-card-image'>
                         <div className='project-icon'>{image}</div>
                     </div>
-                    <div className='project-info'>
-                        <div className='project-name'>{name}</div>
-                        <div className='project-description'>{description}</div>
+                    <div className='project-content'>
+                        <h5 className='project-name'>{name}</h5>
+                        <p className='project-description'>{description}</p>
+                        <p className='project-date'>Date: {date}</p>
                     </div>
                 </div>
             ))}
