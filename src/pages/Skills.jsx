@@ -1,6 +1,5 @@
 import SkillBar from '../components/SkillBar';
 
-
 export default function Skills() {
     const languages = [
         {

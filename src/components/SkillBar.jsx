@@ -10,7 +10,7 @@ export default function SkillBar({ skills }) {
                         <div className='skill-label'>{skill}</div>
                     </div>
                     <div className='skill-percentage'>
-                        <ProgressBar animated now={percentage}/>
+                        <ProgressBar animated now={percentage} label={`${percentage}%`}/>
                     </div>
                 </div>
             ))}
