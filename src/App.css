@@ -9,14 +9,12 @@
   border-radius: 15px;
   padding: 20px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.2%;
 }
 
 /* menu bar */ 
 .navbar {
   background-color: #9AAC9D;
-  padding-right: 0; 
-  margin-right: 0;
 }
 
 .navbar-brand {
@@ -30,9 +28,9 @@
 
 /* home page */
 .home {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-bottom: 10px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin-bottom: 1%;
   justify-content: center;
 }
 
@@ -49,12 +47,12 @@
 
 /* contact icons */ 
 .contact-icons {
-  margin-top: 20px;
+  margin-top: 2%;
 }
 
 .icon {
   color: #495A4C;
-  padding: 10px;
+  padding: 1%;
   font-size: 25px;
 }
 
@@ -70,5 +68,46 @@
 
 .about-text {
   text-align: left;
-  margin-left: 30px;
+  margin-left: 3%;
+}
+
+/* skills section */ 
+.languages-container, .libraries-frameworks-container {
+  display: flex;
+  margin-top: 2%;
+}
+
+.languages-label, .libraries-frameworks-label {
+  margin-left: 2%;
+  margin-right: 16%;
+  width: 10%;
+}
+
+.language-icon, .library-framework-icon {
+  width: 40px;
+}
+
+.skillbar-container {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+}
+
+.skill {
+  justify-content: center;
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-basis: 50%;
+  margin-bottom: 5%;
+  align-items: center;
+}
+
+.skill-percentage {
+  margin-left: 5%; 
+  width: 70%;
+}
+
+.skill-percentage .progress-bar {
+  background-color: #9AAC9D;
 }
