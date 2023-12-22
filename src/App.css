@@ -45,6 +45,10 @@
   font-size: 25px;
 }
 
+.arrow-icon:hover {
+  color: #9AAC9D;
+}
+
 /* contact icons */ 
 .contact-icons {
   margin-top: 2%;
@@ -54,6 +58,10 @@
   color: #495A4C;
   padding: 1%;
   font-size: 25px;
+}
+
+.icon:hover {
+  color: #9AAC9D;
 }
 
 /* about section */ 
@@ -157,4 +165,66 @@
   position: absolute;
   bottom: 0;
   right: 2%;
+}
+
+/* contact section */ 
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.input-field {
+  background-color: #E8D9C9;
+  border: none;
+}
+
+.email-info {
+  width: 25%;
+  margin-left: 10%;
+}
+
+.email-message {
+  width: 40%;
+  margin: 0 auto;
+  margin-left: 5%;
+  flex-direction: column;
+  position: relative;
+}
+
+.message-field {
+  height: 142px;
+  width: 100%;
+  text-indent: 2%;
+  resize: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.email-send-btn {
+  background-color: #9AAC9D;
+  border: none;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-left: 86%;
+}
+
+.email-send-btn:hover {
+  background-color: #495A4C;
+}
+
+.footer {
+  margin-left: 1%;
+  display: flex;
+}
+
+.copyright-image {
+  color: #495A4C; 
+}
+
+.footer-text {
+  margin-left: 1%;
+  margin-top: 0.5%;
 }
