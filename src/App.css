@@ -167,6 +167,51 @@
   right: 2%;
 }
 
+/* work experience */ 
+.company-image {
+  width: 40%;
+}
+
+.timeline-container {
+  margin-top: 4%;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.title-date-section {
+  width: 15%;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.date, .experience-description {
+  font-size: 90%;
+}
+
+.experience-image-section {
+  width: 10%;
+  z-index: 2;
+}
+
+.timeline {
+  border-left: 1px solid #495A4C;
+  height: 22%;
+  position: absolute;
+  left: 29.5%;
+  z-index: 1;
+}
+
+.company-description-section {
+  width: 65%;
+  text-align: left;
+  margin-right: 5%;
+}
+
 /* contact section */ 
 .contact-form {
   display: flex;
