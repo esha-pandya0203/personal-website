@@ -58,14 +58,14 @@ export default function Skills() {
     ]; 
 
     return (
-        <div className='skills rounded-container'>
-            <h2>Skills</h2>
+        <div className='skills rounded-container' id='skills'>
+            <h2 className='skills-heading'>Skills</h2>
             <div className='languages-container'>
-                <h5 className='languages-label'>Languages</h5>
+                <h4 className='languages-label'>Languages</h4>
                 <SkillBar skills={languages} />
             </div>
             <div className='libraries-frameworks-container'>
-                <h5 className='libraries-frameworks-label'>Libraries/Frameworks</h5>
+                <h4 className='libraries-frameworks-label'>Libraries/Frameworks</h4>
                 <SkillBar skills={librariesFrameworks} />
             </div>
         </div>

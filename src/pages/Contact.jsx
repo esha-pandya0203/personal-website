@@ -43,8 +43,8 @@ export default function Contact() {
 
     return (
         <div>
-            <div className='contact rounded-container'>
-                <h2>Contact Me!</h2>
+            <div className='contact rounded-container' id='contact'>
+                <h2 className='contact-header'>Contact Me!</h2>
                 <Form className='contact-form' ref={emailForm} onSubmit={handleSubmitEmail}>
                     <div className='email-info'>
                         <Form.Group className='mb-3' controlId='formName'>

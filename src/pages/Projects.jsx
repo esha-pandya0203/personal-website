@@ -30,8 +30,8 @@ export default function Projects() {
     ]; 
 
     return (
-        <div className='projects rounded-container'>
-            <h2>Projects</h2>
+        <div className='projects rounded-container' id='projects'>
+            <h2 className='projects-heading'>Projects</h2>
             <div className='projects-container'>
                 <ProjectInfo projects={projects} />
             </div>
