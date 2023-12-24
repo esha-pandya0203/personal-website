@@ -117,9 +117,8 @@
 
 .languages-label, .libraries-frameworks-label {
   margin-left: 2%;
-  margin-right: 16%;
+  margin-right: 14%;
   width: 10%;
-  /* font-size: 100%; */
 }
 
 .language-icon, .library-framework-icon {
@@ -140,6 +139,10 @@
   flex-basis: 50%;
   margin-bottom: 5%;
   align-items: center;
+}
+
+.skill-label {
+  font-size: 110%;
 }
 
 .skill-percentage {
@@ -195,7 +198,7 @@
 }
 
 .project-description {
-  font-size: 110%;
+  font-size: 115%;
 }
 
 .project-date {
@@ -218,6 +221,7 @@
 
 .timeline-container {
   margin-top: 4%;
+  position: relative;
 }
 
 .experience {
@@ -244,9 +248,9 @@
 
 .timeline {
   border-left: 1px solid #495A4C;
-  height: 20%;
+  height: 30%;
   position: absolute;
-  left: 29.5%;
+  left: 29%;
   z-index: 1;
 }
 
