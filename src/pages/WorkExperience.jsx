@@ -34,8 +34,8 @@ export default function WorkExperience() {
     ]
 
     return (
-        <div className='work-experience rounded-container'>
-            <h2>Work Experience</h2>
+        <div className='work-experience rounded-container' id='experience'>
+            <h2 className='work-header'>Work Experience</h2>
             <Timeline experiences={experiences} />
         </div>
     ); 

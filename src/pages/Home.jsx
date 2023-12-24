@@ -3,9 +3,9 @@ import { FaRegArrowAltCircleDown } from "react-icons/fa";
 
 export default function Home() {
     return (
-        <div className='home rounded-container'>
-            <h1>Esha Pandya</h1>
-            <h6>Student | Software Developer</h6>
+        <div className='home rounded-container' id='home'>
+            <h1 className='name'>Esha Pandya</h1>
+            <h5 className='role-description'>Student | Software Developer</h5>
             <ContactIcons />
             <a href='#about' className='arrow-icon'>
                 <FaRegArrowAltCircleDown />

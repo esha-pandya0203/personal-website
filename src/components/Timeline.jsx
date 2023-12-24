@@ -4,7 +4,7 @@ export default function Timeline({ experiences }) {
             {experiences.map(({ company, title, date, description, image }) => (
                 <div className='experience'>
                     <div className='title-date-section'>
-                        <h5 className='title'>{title}</h5> 
+                        <h4 className='title'>{title}</h4> 
                         <p className='date'>{date}</p>
                     </div>
                     <div className='timeline'></div>
@@ -12,7 +12,7 @@ export default function Timeline({ experiences }) {
                         {image}
                     </div>
                     <div className='company-description-section'>
-                        <h5 className='company-name'>{company}</h5>
+                        <h4 className='company-name'>{company}</h4>
                         <div className='experience-description'>
                             <ul>
                                 {description.map((bullet) => (

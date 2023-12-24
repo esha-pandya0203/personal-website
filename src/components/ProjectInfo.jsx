@@ -7,7 +7,7 @@ export default function ProjectInfo({ projects }) {
                         <div className='project-icon'>{image}</div>
                     </div>
                     <div className='project-content'>
-                        <h5 className='project-name'>{name}</h5>
+                        <h4 className='project-name'>{name}</h4>
                         <p className='project-description'>{description}</p>
                         <p className='project-date'>Date: {date}</p>
                     </div>
