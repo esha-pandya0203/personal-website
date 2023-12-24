@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/esha-pandya.github.io/static/css/main.a0a082e5.css",
+    "main.js": "/esha-pandya.github.io/static/js/main.bb96fa71.js",
+    "static/js/787.0f15b36d.chunk.js": "/esha-pandya.github.io/static/js/787.0f15b36d.chunk.js",
+    "index.html": "/esha-pandya.github.io/index.html",
+    "main.a0a082e5.css.map": "/esha-pandya.github.io/static/css/main.a0a082e5.css.map",
+    "main.bb96fa71.js.map": "/esha-pandya.github.io/static/js/main.bb96fa71.js.map",
+    "787.0f15b36d.chunk.js.map": "/esha-pandya.github.io/static/js/787.0f15b36d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0a082e5.css",
+    "static/js/main.bb96fa71.js"
+  ]
+}
