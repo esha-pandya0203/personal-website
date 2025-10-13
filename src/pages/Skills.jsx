@@ -3,33 +3,43 @@ import SkillBar from '../components/SkillBar';
 export default function Skills() {
     const languages = [
         {
+            skill: 'Python',
+            logo: <img src={process.env.PUBLIC_URL + '/images/language-icons/python.png'} className='language-icon' alt='python-icon'/>, 
+            percentage: 35,
+        },
+        {
+            skill: 'SQL',
+            logo: <img src={process.env.PUBLIC_URL + '/images/language-icons/sql.png'} className='language-icon' alt='sql-icon'/>, 
+            percentage: 35,
+        },
+        {
             skill: 'Java',
-            logo: <img src={process.env.PUBLIC_URL + '/images/java.png'} className='language-icon' alt='java-icon'/>, 
+            logo: <img src={process.env.PUBLIC_URL + '/images/language-icons/java.png'} className='language-icon' alt='java-icon'/>, 
             percentage: 90,
         },
         {
             skill: 'HTML5',
-            logo: <img src={process.env.PUBLIC_URL + '/images/html-5.png'} className='language-icon' alt='html-icon'/>, 
+            logo: <img src={process.env.PUBLIC_URL + '/images/language-icons/html-5.png'} className='language-icon' alt='html-icon'/>, 
             percentage: 85,
         },
         {
             skill: 'C#',
-            logo: <img src={process.env.PUBLIC_URL + '/images/c-sharp.png'} className='language-icon' alt='c-sharp-icon'/>, 
+            logo: <img src={process.env.PUBLIC_URL + '/images/language-icons/c-sharp.png'} className='language-icon' alt='c-sharp-icon'/>, 
             percentage: 80,
         },
         {
             skill: 'CSS',
-            logo: <img src={process.env.PUBLIC_URL + '/images/css-3.png'} className='language-icon' alt='css-icon'/>, 
+            logo: <img src={process.env.PUBLIC_URL + '/images/language-icons/css-3.png'} className='language-icon' alt='css-icon'/>, 
             percentage: 90,
         },
         {
-            skill: 'Python',
-            logo: <img src={process.env.PUBLIC_URL + '/images/python.png'} className='language-icon' alt='python-icon'/>, 
-            percentage: 35,
+            skill: 'TypeScript',
+            logo: <img src={process.env.PUBLIC_URL + '/images/language-icons/typescript.png'} className='language-icon' alt='typescript-icon'/>, 
+            percentage: 95,
         },
         {
-            skill: 'TypeScript',
-            logo: <img src={process.env.PUBLIC_URL + '/images/typescript.png'} className='language-icon' alt='typescript-icon'/>, 
+            skill: 'JavaScript',
+            logo: <img src={process.env.PUBLIC_URL + '/images/language-icons/javascript.png'} className='language-icon' alt='javascript-icon'/>, 
             percentage: 95,
         },
     ]; 
@@ -37,22 +47,22 @@ export default function Skills() {
     const librariesFrameworks = [
         {
             skill: 'React',
-            logo: <img src={process.env.PUBLIC_URL + '/images/react-svgrepo-com.svg'} className='library-framework-icon' alt='react-icon'/>, 
+            logo: <img src={process.env.PUBLIC_URL + '/images/library-icons/react-svgrepo-com.svg'} className='library-framework-icon' alt='react-icon'/>, 
             percentage: 75,
         },
         {
             skill: 'JUnit',
-            logo: <img src={process.env.PUBLIC_URL + '/images/junit.png'} className='library-framework-icon' alt='junit-icon'/>, 
+            logo: <img src={process.env.PUBLIC_URL + '/images/library-icons/junit.png'} className='library-framework-icon' alt='junit-icon'/>, 
             percentage: 70,
         },
         {
             skill: 'Bootstrap',
-            logo: <img src={process.env.PUBLIC_URL + '/images/bootstrap.png'} className='library-framework-icon' alt='bootstrap-icon'/>, 
+            logo: <img src={process.env.PUBLIC_URL + '/images/library-icons/bootstrap.png'} className='library-framework-icon' alt='bootstrap-icon'/>, 
             percentage: 80,
         },
         {
             skill: 'Jest',
-            logo: <img src={process.env.PUBLIC_URL + '/images/jest-js-icon.svg'} className='library-framework-icon' alt='jest-icon'/>, 
+            logo: <img src={process.env.PUBLIC_URL + '/images/library-icons/jest-js-icon.svg'} className='library-framework-icon' alt='jest-icon'/>, 
             percentage: 80,
         },
     ]; 

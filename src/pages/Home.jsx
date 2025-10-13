@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className='home rounded-container' id='home'>
             <h1 className='name'>Esha Pandya</h1>
-            <h5 className='role-description'>Student | Software Developer</h5>
+            <h5 className='role-description'>Student | Data Analyst</h5>
             <ContactIcons />
             <a href='#about' className='arrow-icon'>
                 <FaRegArrowAltCircleDown />

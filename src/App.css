@@ -84,7 +84,8 @@
 }
 
 .profile-picture {
-  width: 60%;
+  width: 65%;
+  border-radius: 50%;
 }
 
 .about-picture {
@@ -227,7 +228,7 @@
 .experience {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 1%;
 }
 
@@ -238,7 +239,7 @@
 }
 
 .date, .experience-description {
-  font-size: 110%;
+  font-size: 100%;
 }
 
 .experience-image-section {
@@ -248,10 +249,11 @@
 
 .timeline {
   border-left: 1px solid #495A4C;
-  height: 30%;
   position: absolute;
   left: 29%;
   z-index: 1;
+  top: 0; 
+  bottom: 0;
 }
 
 .company-description-section {
