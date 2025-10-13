@@ -1,5 +1,3 @@
-import ProgressBar from 'react-bootstrap/ProgressBar';
-
 export default function SkillBar({ skills }) {
     return (
         <div className='skillbar-container'>
@@ -9,9 +7,6 @@ export default function SkillBar({ skills }) {
                         <div className='skill-icon'>{logo}</div>
                         <div className='skill-label'>{skill}</div>
                     </div>
-                    {/* <div className='skill-percentage'>
-                        <ProgressBar animated now={percentage} label={`${percentage}%`}/>
-                    </div> */}
                 </div>
             ))}
         </div>
