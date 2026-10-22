@@ -1,25 +1,28 @@
 .app-container {
-  background-color: #74A2BE;
-  font-family: 'Didact Gothic'; 
-  color: #000000; 
+  background-color: #000000;
+  font-family: 'Droid Sans'; 
+  color: #ffffff; 
+  min-height: 100vh;
 }
 
-.rounded-container {
+/* .rounded-container {
   background-color: #FFFFFF;
   border-radius: 15px;
   padding: 20px;
   text-align: center;
   margin-top: 1.2%;
   padding-top: 5%;
-}
+} */
 
 /* menu bar */ 
 .navbar {
-  background-color: #74A2BE;
+  background-color: #000000;
+  min-height: 50px;
   position: fixed; 
   top: 0; 
   width: 100%;
-  z-index: 3;
+  padding: 3px 0;
+  z-index: 20;
 }
 
 .navbar-brand {
@@ -32,82 +35,136 @@
   margin-left: auto;
 }
 
-.menu-link {
+.navbar .nav-link {
   font-size: 110%;
-  color: #FFFFFF; 
+  color: #F5F5F5; 
+  margin-left: 6px;
+  padding: 8px 10px;
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-link:active {
+  color: #77812A; 
 }
 
 /* home page */
-.home {
-  margin-top: 3.5%;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  justify-content: center;
+.hero {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: calc(100vh - 50vh);
+  min-height: 620px;
+
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.48),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url('../public/images/flower-background.jpg')
+      center center / cover no-repeat; 
+  
+  text-align: center;
+}
+
+.hero-content {
+  transform: translateY(-4%);
 }
 
 .name {
   font-weight: bold;
+  color: #F5F5F5; 
+  font-size: clamp(40px, 4.2vw, 62px);
+  margin-bottom: 8px; 
 }
 
 .role-description {
-  margin-top: 2%;
+  color: #F5F5F5; 
+  font-size: clamp(19px, 2.2vw, 27px);
+  margin: 0;
+}
+
+.hero .icon {
+  color: #F5F5F5; 
+  font-size: 25px; 
+  padding: 0 12px; 
+}
+
+.hero .icon:hover {
+  color: #616F25; 
 }
 
 .arrow-icon {
   position: absolute;
   bottom: -4%;
-  background-color: #FFFFFF; /* TODO: FIX THIS */
-  color: #D282A6;
-  font-size: 160%;
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: #F5F5F5;
+  font-size: 37px;
 }
 
 .arrow-icon:hover {
-  color: #74A2BE;
+  color: #616F25;
 }
 
 /* contact icons */ 
 .contact-icons {
   margin-top: 2%;
+  text-align: center;
 }
 
 .icon {
-  color: #D282A6;
+  color: #D9D89F;
   padding: 1%;
   font-size: 170%;
 }
 
 .icon:hover {
-  color: #74A2BE;
+  color: #616F25;
+}
+
+.home-about {
+  padding: 80px 24px 112px; 
+  scroll-margin-top: 55px;
 }
 
 /* about section */ 
 .about {
   display: flex;
-  align-items: center;
+  align-items: center; 
+  gap: 28px;
+  max-width: 90%;
+  margin: 0 auto; 
 }
 
 .profile-picture {
-  width: 65%;
-  border-radius: 50%;
+  width: 100%;
+  border-radius: 10%;
+  display: block;
 }
 
 .about-picture {
   width: 25%;
+  flex: 0 0 31%;
 }
 
 .about-heading {
   font-weight: bold;
+  font-size: clamp(30px, 3vw, 42px);
+  margin-bottom: 13px;
 }
 
 .about-text {
+  font-size: clamp(16px, 1.35vw, 19px);
   text-align: left;
-  margin-left: 3%;
-  width: 75%;
+  margin-left: 5%;
+  width: auto;
+  flex: 1; 
+  margin: 0; 
 }
 
 .about-p {
-  font-size: 120%;
+  font-size: 100%;
 }
 
 /* skills section */ 
@@ -269,39 +326,54 @@
 }
 
 /* contact section */ 
+.contact {
+  background: #907D77; 
+  color: #000000; 
+  border-radius: 20px 20px 0 0;
+  padding: 42px 5% 12px;
+}
+
 .contact-header {
   font-weight: bold;
+  font-size: clamp(32px, 3.4vw, 44px);
+  text-align: left;
+  margin-bottom: 30px; 
 }
 
 .contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 100px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .input-field {
-  background-color: #74A2BE;
+  background-color: #D9D89F;
   border: none;
-  font-size: 120%;
+  font-size: 17px;
+  width: 100%;
+  padding: 11px 16px;
+}
+
+.input-field::placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .email-info {
-  width: 25%;
-  margin-left: 18%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .email-message {
-  width: 40%;
-  margin: 0 auto;
-  margin-left: 5%;
-  flex-direction: column;
-  position: relative;
+  width: 100%;
 }
 
 .message-field {
-  height: 152px;
+  height: 200px;
   width: 100%;
   text-indent: 2%;
   resize: none;
@@ -310,15 +382,17 @@
 }
 
 .email-send-btn {
-  background-color: #74A2BE;
+  background-color: #D9D89F;
+  color: #000000;
   border: none;
   align-self: flex-end;
+  float: right; 
+  min-width: 136px; 
   margin-top: auto;
-  margin-left: 86%;
 }
 
 .email-send-btn:hover {
-  background-color: #D282A6;
+  background-color: #77812A;
 }
 
 .footer {
@@ -327,7 +401,7 @@
 }
 
 .copyright-image {
-  color: #FFFFFF; 
+  color: #F5F5F5; 
 }
 
 .footer-text {

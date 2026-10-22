@@ -2,22 +2,40 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-export default function Menu() {
+const menuItems = [
+  ['/', 'Home'],
+  ['/about', 'About'],
+  ['/skills', 'Skills'],
+  ['/projects', 'Projects'],
+  ['/experience', 'Experience'],
+  ['/contact', 'Contact'],
+];
+
+export default function Menu({ path, navigate }) {
   return (
-    <Navbar expand="lg" className="navbar">
-      <Container>
-        <Navbar.Brand className='navbar-brand ml-auto' href="#home">
+    <Navbar expand="lg" variant='dark' className="navbar">
+      <Container fluid='lg'>
+        <Navbar.Brand className='navbar-brand ml-auto' href="/"
+          onClick={(e) => {
+            e.preventDefault(); 
+            navigate('/')
+          }}>
             EP
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto justify-content-end">
-            <Nav.Link href="#home" className='menu-link'>Home</Nav.Link>
-            <Nav.Link href="#about" className='menu-link'>About</Nav.Link>
-            <Nav.Link href="#skills" className='menu-link'>Skills</Nav.Link>
-            <Nav.Link href="#projects" className='menu-link'>Projects</Nav.Link>
-            <Nav.Link href="#experience" className='menu-link'>Experience</Nav.Link>
-            <Nav.Link href="#contact" className='menu-link'>Contact</Nav.Link>
+          <Nav className="ms-auto justify-content-end">
+            {menuItems.map(([url, label]) => (
+              <Nav.Link key={url} 
+              href={url} 
+              active={path === url} 
+              onClick={(e) => {
+                e.preventDefault(); 
+                navigate(url); 
+              }}>
+                {label} 
+              </Nav.Link>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>

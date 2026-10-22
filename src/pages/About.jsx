@@ -6,7 +6,7 @@ export default function About() {
             </div>
             <div className='about-text'>
                 <h2 className='about-heading'>About Me</h2>
-                <p className='about-p'>I am a first-year graduate student at Carnegie Mellon University pursuing a Master of Sciencce 
+                <p className='about-p'>I am a second-year graduate student at Carnegie Mellon University pursuing a Master of Science 
                     in Health Care Analytics and Information Technology. I graduated summa cum laude from Northeastern University with 
                     a B.S. in Computer Science and a minor in Business Administration. 
                     As I head into the start of my career, I'm dedicated to making a lasting impact in the healthcare industry. 
